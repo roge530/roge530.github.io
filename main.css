@@ -28,7 +28,7 @@ main
 section.projects
 {
     grid-area: 3 / 1 / 4 / 5;
-    background: rgb(200, 100, 0);
+    background: rgb(255, 255, 255);
 }
 
 section.education
