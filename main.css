@@ -1,81 +1,108 @@
 body
 {
     margin: 0;
-    height: 100vh;
+    height: 400vh;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background: black;
 }
 
 .grid-container
 {
     display: grid;
-    grid-template-columns: .5fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 4fr 3fr 2fr;
-    height: 100vh;
-    margin: 2em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr ;
+    height: 400vh;
+
 }
 
-ul 
-{
-    list-style-type: none;
-    perspective: 1000px;
-}
-
-ul li 
-{
-    display: grid;
-    grid-template-columns: 20% auto;
-    border: 10px;
-    padding: 10px;
-    cursor: pointer;
-    position: absolute;
-    border-bottom: 4px solid rgba(0,0,0,.2);
-    transform: rotateY(30deg) rotateX(-15deg);
-}
-
-ul li:hover
-{
-    transform: rotateY(25deg) rotateX(-7deg) scale(1.03);
-    transition: transform .4s ease-out;
-}
-
-ul li:nth-child(1)
-{
-    background: #bbffee;
-    left: 100px;
-    z-index: 1;
-}
-
-ul li:nth-child(2)
-{
-    background: #faffcf;
-    left: 550px;
-    z-index: 0;
-}
-
-img 
-{
-    width: 70px;
-}
 header
 {
-    grid-area: 1 / 1 / 2 / 5;
-    background: rgb(1, 49, 88);
+    grid-area: 1 / 1 / 2 / 7;
+
 }
 
 main 
 {
-    grid-area: 2 / 1 / 3 / 5;
-    background: rgb(103, 93, 187);
+    grid-area: 2 / 1 / 10 / 7;
+
 }
 
-section.projects
+img
 {
-    grid-area: 3 / 1 / 4 / 5;
-    background: rgb(255, 255, 255);
+    width: 200px;
 }
 
+section.VisualStudio
+{
+    grid-area: 2 / 1 / 6 / 2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+section.CSharp
+{
+    grid-area: 2 / 2 / 4 / 7;
+}
+
+section.Cplusplus
+{
+    grid-area: 4 / 2 / 6 / 7;
+}
+
+section.VersionControl
+{
+    grid-area: 6 / 1 / 8 / 2 ;
+}
+
+section.Git 
+{
+    grid-area: 6 / 2 / 8 / 7;
+}
+
+
+ section.Languages
+ {
+     grid-area: 8 / 1 / 10 / 2;
+ }
+
+ section.English
+ {
+     grid-area: 8 / 2 / 10 / 7;
+ }
+section.project1
+{
+    grid-area: 10 / 1 / 11 / 3;    
+}
+section.project2
+{
+    grid-area: 10 / 3 / 11 / 5;
+}
+section.project3
+{
+    grid-area: 10 / 5 / 11 / 7;
+}
+section.project4
+{
+    grid-area: 11 / 1 / 12 / 3; 
+}
+section.project5
+{
+    grid-area: 11 / 3 / 12 / 5; 
+}
+section.project6
+{
+    grid-area: 11 / 5 / 12 / 7; 
+}
+section.experience
+{
+    grid-area: 12 / 1 / 14 / 7;
+}
 section.education
 {
-    grid-area: 4 / 1 / 5 / 5;
-    background-color: rgb(172, 172, 171);
+    grid-area: 14 / 1 / 16 / 7;
+
 }
 
