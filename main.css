@@ -22,12 +22,6 @@ header
 
 }
 
-main 
-{
-    grid-area: 2 / 1 / 10 / 7;
-
-}
-
 img
 {
     width: 200px;
@@ -36,66 +30,81 @@ img
 section.VisualStudio
 {
     grid-area: 2 / 1 / 6 / 2;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    place-self: center;
 }
 
 section.CSharp
 {
-    grid-area: 2 / 2 / 4 / 7;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    grid-area: 2 / 2 / 4 / 3;
+    justify-self: left;
+    align-self: center;
+}
+
+section.CSharpText
+{
+    grid-area: 2 / 3 / 4 / 7;
+    justify-self: left;
+    align-self: center;
+    font-size: xx-large;
 }
 
 section.Cplusplus
 {
-    grid-area: 4 / 2 / 6 / 7;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    grid-area: 4 / 2 / 6 / 3;
+    justify-self: center;
+    align-self: center;
+}
+
+section.CplusplusText
+{
+    grid-area: 4 / 3 / 6 / 7;
+    justify-self: left;
+    align-self: center;
+    font-size: xx-large;
 }
 
 section.VersionControl
 {
     grid-area: 6 / 1 / 8 / 2 ;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    place-self: center;
 }
 
 section.Git 
 {
-    grid-area: 6 / 2 / 8 / 7;
+    grid-area: 6 / 2 / 7 / 7;
     background: rgb(11, 11, 56);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    justify-self: center;
+    align-self: center;
 }
 
+section.GitText
+{
+    grid-area: 7 / 2 / 8 / 7;
+    justify-self: center;
+    align-self: start;
+    font-size: large;
+    text-align: center;
+}
 
- section.Languages
- {
-     grid-area: 8 / 1 / 10 / 2;
- }
+section.Languages
+{
+    grid-area: 8 / 1 / 10 / 2;
+}
 
- section.English
- {
-     grid-area: 8 / 2 / 10 / 7;
- }
+section.English
+{
+    grid-area: 8 / 2 / 10 / 7;
+}
 section.project1
 {
-    grid-area: 10 / 1 / 11 / 3;    
+    grid-area: 10 / 1 / 11 / 3;   
+    place-self: center;
 }
+
 section.project2
 {
     grid-area: 10 / 3 / 11 / 5;
+    place-self: center;
 }
 section.project3
 {
@@ -123,3 +132,40 @@ section.education
 
 }
 
+button
+{
+    background: rgb(11, 11, 56);
+    color: #ccc;
+    width: 240px;
+    height: 80px;
+    border: 1px solid rgb(41, 41, 95);
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+}
+
+button:focus
+{
+    outline: none;
+}
+
+button:hover
+{
+    background: rgb(41, 41, 95);
+    cursor: pointer;
+}
+
+button:hover::before
+{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+button:hover::after
+{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
