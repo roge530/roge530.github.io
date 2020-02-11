@@ -11,14 +11,29 @@ body
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr ;
+    grid-template-rows: repeat(16, 4fr);
     height: 400vh;
-
+    grid-template-areas: "header header header header header header"
+                         "vs cs cst cst cst cst"
+                         "vs cs cst cst cst cst"
+                         "vs ct ct ct ct c"
+                         "vs ct ct ct ct c"
+                         "control g g g g g"
+                         "control gt gt gt gt gt"
+                         "languages languages languages languages languages languages"
+                         "languages languages languages languages languages languages"
+                         "p1 p1 p2 p2 p3 p3"
+                         "p4 p4 p5 p5 p6 p6"
+                         "aP aP aP aP aP aP"
+                         "xp xp xp xp xp xp"
+                         "xp xp xp xp xp xp"
+                         "ed ed ed ed ed ed"
+                         "ed ed ed ed ed ed";
 }
 
 header
 {
-    grid-area: 1 / 1 / 2 / 7;
+    grid-area: header;
 
 }
 
@@ -29,20 +44,20 @@ img
 
 section.VisualStudio
 {
-    grid-area: 2 / 1 / 6 / 2;
+    grid-area: vs;
     place-self: center;
 }
 
 section.CSharp
 {
-    grid-area: 2 / 2 / 4 / 3;
+    grid-area: cs;
     justify-self: left;
     align-self: center;
 }
 
 section.CSharpText
 {
-    grid-area: 2 / 3 / 4 / 7;
+    grid-area: cst;
     justify-self: left;
     align-self: center;
     font-size: xx-large;
@@ -50,28 +65,28 @@ section.CSharpText
 
 section.Cplusplus
 {
-    grid-area: 4 / 2 / 6 / 3;
+    grid-area: c;
     justify-self: center;
     align-self: center;
 }
 
 section.CplusplusText
 {
-    grid-area: 4 / 3 / 6 / 7;
-    justify-self: left;
+    grid-area: ct;
+    justify-self: right;
     align-self: center;
     font-size: xx-large;
 }
 
 section.VersionControl
 {
-    grid-area: 6 / 1 / 8 / 2 ;
+    grid-area: control;
     place-self: center;
 }
 
 section.Git 
 {
-    grid-area: 6 / 2 / 7 / 7;
+    grid-area: g;
     background: rgb(11, 11, 56);
     justify-self: center;
     align-self: center;
@@ -79,7 +94,7 @@ section.Git
 
 section.GitText
 {
-    grid-area: 7 / 2 / 8 / 7;
+    grid-area: gt;
     justify-self: center;
     align-self: start;
     font-size: large;
@@ -88,47 +103,46 @@ section.GitText
 
 section.Languages
 {
-    grid-area: 8 / 1 / 10 / 2;
-}
-
-section.English
-{
-    grid-area: 8 / 2 / 10 / 7;
+    grid-area: languages;
 }
 section.project1
 {
-    grid-area: 10 / 1 / 11 / 3;   
+    grid-area: p1;   
     place-self: center;
 }
 
 section.project2
 {
-    grid-area: 10 / 3 / 11 / 5;
+    grid-area: p2;
     place-self: center;
 }
 section.project3
 {
-    grid-area: 10 / 5 / 11 / 7;
+    grid-area: p3;
 }
 section.project4
 {
-    grid-area: 11 / 1 / 12 / 3; 
+    grid-area: p4; 
 }
 section.project5
 {
-    grid-area: 11 / 3 / 12 / 5; 
+    grid-area: p5; 
 }
 section.project6
 {
-    grid-area: 11 / 5 / 12 / 7; 
+    grid-area: p6; 
+}
+section.aP
+{
+    grid-area: aP;
 }
 section.experience
 {
-    grid-area: 12 / 1 / 14 / 7;
+    grid-area: xp;
 }
 section.education
 {
-    grid-area: 14 / 1 / 16 / 7;
+    grid-area: ed;
 
 }
 
@@ -168,4 +182,24 @@ button:hover::after
     transform: translateX(300px) skewX(-15deg);
     opacity: 1;
     transition: .7s;
+}
+
+@media screen and (max-width: 768px)
+{
+    img
+    {
+        width: 50px;
+    }
+    section.CSharpText
+    {
+        font-size: medium;
+    }
+    section.CplusplusText
+    {
+        font-size: medium;
+    }
+    section.GitText
+    {
+        font-size: x-small;
+    }
 }
