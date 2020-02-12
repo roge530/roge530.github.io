@@ -107,13 +107,15 @@ section.Languages
 }
 section.project1
 {
-    grid-area: p1;   
+    grid-area: p1;
+    font-size: medium;   
     place-self: center;
 }
 
 section.project2
 {
     grid-area: p2;
+    font-size: medium;
     place-self: center;
 }
 section.project3
@@ -184,23 +186,37 @@ button:hover::after
     transition: .7s;
 }
 
-@media (max-width: 768px)
+@media (max-width: 1440px)
 {
     img
     {
-        width: 50px;
+        width: 150px;
     }
     section.CSharpText
     {
-        font-size: medium;
+        font-size: x-large;
     }
     section.CplusplusText
     {
-        font-size: medium;
+        font-size: x-large;
     }
     section.GitText
     {
-        font-size: x-small;
+        font-size: medium;
+    }
+    section.project1
+    {
+        font-size: small;
+    }
+    section.project2
+    {
+        font-size: small;
+    }
+    button
+    {
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
     }
 }
 
@@ -221,5 +237,53 @@ button:hover::after
     section.GitText
     {
         font-size: small;
+    }
+    section.project1
+    {
+        font-size: x-small;
+    }
+    section.project2
+    {
+        font-size: x-small;
+    }
+    button
+    {
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    img
+    {
+        width: 50px;
+    }
+    section.CSharpText
+    {
+        font-size: medium;
+    }
+    section.CplusplusText
+    {
+        font-size: medium;
+    }
+    section.GitText
+    {
+        font-size: x-small;
+    }
+    section.project1
+    {
+        font-size: xx-small;
+    }
+    section.project2
+    {
+        font-size: xx-small;
+    }
+    button
+    {
+        width: 120px;
+        height: 20px;
+        font-size: 12px;
     }
 }
