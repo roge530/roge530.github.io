@@ -97,7 +97,7 @@ section.GitText
     grid-area: gt;
     justify-self: center;
     align-self: start;
-    font-size: large;
+    font-size: xx-large;
     text-align: center;
 }
 
@@ -202,7 +202,7 @@ button:hover::after
     }
     section.GitText
     {
-        font-size: medium;
+        font-size: x-large;
     }
     section.project1
     {
@@ -236,7 +236,7 @@ button:hover::after
     }
     section.GitText
     {
-        font-size: small;
+        font-size: large;
     }
     section.project1
     {
@@ -274,7 +274,7 @@ button:hover::after
     }
     section.GitText
     {
-        font-size: x-small;
+        font-size: medium;
     }
     section.project1
     {
