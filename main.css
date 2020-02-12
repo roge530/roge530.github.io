@@ -264,6 +264,10 @@ button:hover::after
     {
         font-size: medium;
     }
+    section.Cplusplus
+    {
+        justify-self: left;
+    }
     section.CplusplusText
     {
         font-size: medium;
