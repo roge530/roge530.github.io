@@ -184,7 +184,7 @@ button:hover::after
     transition: .7s;
 }
 
-@media screen and (max-width: 768px)
+@media (max-width: 768px)
 {
     img
     {
@@ -201,5 +201,25 @@ button:hover::after
     section.GitText
     {
         font-size: x-small;
+    }
+}
+
+@media (max-width: 1080px)
+{
+    img
+    {
+        width: 100px;
+    }
+    section.CSharpText
+    {
+        font-size: large;
+    }
+    section.CplusplusText
+    {
+        font-size: large;
+    }
+    section.GitText
+    {
+        font-size: small;
     }
 }
