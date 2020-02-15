@@ -11,37 +11,55 @@ body
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(16, 4fr);
+    grid-template-rows: 1fr repeat(16, 4fr) ;
     height: 400vh;
-    grid-template-areas: "header header header header header header"
+    grid-template-areas: "header header header header header ic"
                          "vs cs cst cst cst cst"
                          "vs cs cst cst cst cst"
                          "vs ct ct ct ct c"
                          "vs ct ct ct ct c"
                          "control g g g g g"
                          "control gt gt gt gt gt"
-                         "languages languages languages languages languages languages"
-                         "languages languages languages languages languages languages"
+                         "languages languages languages languagesImg languagesImg languagesImg"
+                         "languages languages languages languagesImg languagesImg languagesImg"
                          "p1 p1 p2 p2 p3 p3"
                          "p4 p4 p5 p5 p6 p6"
                          "aP aP aP aP aP aP"
-                         "xp xp xp xp xp xp"
-                         "xp xp xp xp xp xp"
-                         "ed ed ed ed ed ed"
-                         "ed ed ed ed ed ed";
+                         "xp xp xp xpT xpT xpT"
+                         "xp xp xp xpT xpT xpT"
+                         "ed1 ed1T ed2 ed2T ed3 ed3T"
+                         "ed4 ed4T . . . ."
+                         "ft ft ft ft ft ft";
 }
 
 header
 {
     grid-area: header;
+    font-size: x-large;
+}
 
+section.icons
+{
+    grid-area: ic;
+    justify-self: right;
 }
 
 img
 {
     width: 200px;
 }
-
+img.map
+{
+    width: 1000px;
+}
+img.net
+{
+    width: 700px;
+}
+img.icon
+{
+    width: 40px;
+}
 section.VisualStudio
 {
     grid-area: vs;
@@ -87,7 +105,6 @@ section.VersionControl
 section.Git 
 {
     grid-area: g;
-    background: rgb(11, 11, 56);
     justify-self: center;
     align-self: center;
 }
@@ -104,6 +121,13 @@ section.GitText
 section.Languages
 {
     grid-area: languages;
+    justify-self: center;
+    align-self: center;
+    font-size: xx-large;
+}
+section.LanguagesImg
+{
+    grid-area: languagesImg;
 }
 section.project1
 {
@@ -137,17 +161,83 @@ section.project6
 section.aP
 {
     grid-area: aP;
+    justify-self: center;
+    align-self: center;
 }
 section.experience
 {
     grid-area: xp;
+    justify-self: center;
+    align-self: center;
 }
-section.education
+section.experienceText
 {
-    grid-area: ed;
-
+    grid-area: xpT;
+    justify-self: left;
+    align-self: center;
+    font-size: xx-large;
 }
 
+section.edu1
+{
+    grid-area: ed1;
+    justify-self: center;
+    align-self: center;
+}
+section.edu1T
+{
+    grid-area: ed1T;
+    justify-self: left;
+    align-self: center;
+    font-size: large;
+}
+
+section.edu2
+{
+    grid-area: ed2;
+    justify-self: center;
+    align-self: center;
+}
+section.edu2T
+{
+    grid-area: ed2T;
+    justify-self: left;
+    align-self: center;
+    font-size: large;
+}
+
+section.edu3
+{
+    grid-area: ed3;
+    justify-self: center;
+    align-self: center;
+}
+section.edu3T
+{
+    grid-area: ed3T;
+    justify-self: left;
+    align-self: center;
+    font-size: large;
+}
+
+section.edu4
+{
+    grid-area: ed4;
+    justify-self: center;
+    align-self: center;
+}
+section.edu4T
+{
+    grid-area: ed4T;
+    justify-self: left;
+    align-self: center;
+    font-size: large;
+}
+footer
+{
+    grid-area: ft;
+    align-self: flex-end;
+}
 button
 {
     background: rgb(11, 11, 56);
@@ -161,14 +251,34 @@ button
     overflow: hidden;
 }
 
+button.b2
+{
+    background: rgb(68, 68, 71);
+    color: #ccc;
+    width: 1080px;
+    height: 80px;
+    border: 1px solid rgb(101, 101, 104);
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+}
+
 button:focus
 {
     outline: none;
 }
 
+
 button:hover
 {
     background: rgb(41, 41, 95);
+    cursor: pointer;
+}
+
+button.b2:hover
+{
+    background: rgb(68, 68, 71);
     cursor: pointer;
 }
 
