@@ -60,6 +60,7 @@ img.icon
 {
     width: 40px;
 }
+
 section.VisualStudio
 {
     grid-area: vs;
@@ -237,6 +238,7 @@ footer
 {
     grid-area: ft;
     align-self: flex-end;
+    font-size: large;
 }
 button
 {
@@ -298,9 +300,25 @@ button:hover::after
 
 @media (max-width: 1440px)
 {
+    header
+    {
+        font-size: x-large;
+    }
     img
     {
         width: 150px;
+    }
+    img.map
+    {
+        width: 600px;
+    }
+    img.net
+    {
+        width: 400px;
+    }
+    img.icon
+    {
+        width: 30px;
     }
     section.CSharpText
     {
@@ -314,6 +332,10 @@ button:hover::after
     {
         font-size: x-large;
     }
+    section.Languages
+    {
+        font-size: x-large;
+    }
     section.project1
     {
         font-size: small;
@@ -321,6 +343,30 @@ button:hover::after
     section.project2
     {
         font-size: small;
+    }
+    section.experienceText
+    {
+        font-size: x-large;
+    }
+    section.edu1T
+    {
+        font-size: medium;
+    }
+    section.edu2T
+    {
+        font-size: medium;
+    }
+    section.edu3T
+    {
+        font-size: medium;
+    }
+    section.edu4T
+    {
+        font-size: medium;
+    }
+    footer
+    {
+        font-size: medium;
     }
     button
     {
@@ -332,9 +378,25 @@ button:hover::after
 
 @media (max-width: 1080px)
 {
+    header
+    {
+        font-size: large;
+    }
     img
     {
         width: 100px;
+    }
+    img.map
+    {
+        width: 400px;
+    }
+    img.net
+    {
+        width: 200px;
+    }
+    img.icon
+    {
+        width: 20px;
     }
     section.CSharpText
     {
@@ -348,6 +410,10 @@ button:hover::after
     {
         font-size: large;
     }
+    section.Languages
+    {
+        font-size: large;
+    }
     section.project1
     {
         font-size: x-small;
@@ -355,6 +421,30 @@ button:hover::after
     section.project2
     {
         font-size: x-small;
+    }
+    section.experienceText
+    {
+        font-size: large;
+    }
+    section.edu1T
+    {
+        font-size: small;
+    }
+    section.edu2T
+    {
+        font-size: small;
+    }
+    section.edu3T
+    {
+        font-size: small;
+    }
+    section.edu4T
+    {
+        font-size: small;
+    }
+    footer
+    {
+        font-size: small;
     }
     button
     {
@@ -366,9 +456,25 @@ button:hover::after
 
 @media (max-width: 768px)
 {
+    header
+    {
+        font-size: medium;
+    }
     img
     {
         width: 50px;
+    }
+    img.map
+    {
+        width: 300px;
+    }
+    img.net
+    {
+        width: 150px;
+    }
+    img.icon
+    {
+        width: 20px;
     }
     section.CSharpText
     {
@@ -386,6 +492,10 @@ button:hover::after
     {
         font-size: medium;
     }
+    section.Languages
+    {
+        font-size: medium;
+    }
     section.project1
     {
         font-size: xx-small;
@@ -393,6 +503,30 @@ button:hover::after
     section.project2
     {
         font-size: xx-small;
+    }
+    section.experienceText
+    {
+        font-size: medium;
+    }
+    section.edu1T
+    {
+        font-size: x-small;
+    }
+    section.edu2T
+    {
+        font-size: x-small;
+    }
+    section.edu3T
+    {
+        font-size: x-small;
+    }
+    section.edu4T
+    {
+        font-size: x-small;
+    }
+    footer
+    {
+        font-size: x-small;
     }
     button
     {
