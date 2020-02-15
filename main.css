@@ -129,6 +129,7 @@ section.Languages
 section.LanguagesImg
 {
     grid-area: languagesImg;
+    place-self: center;
 }
 section.project1
 {
@@ -468,6 +469,29 @@ button:hover::after
 
 @media (max-width: 768px)
 {
+    .grid-container
+    {
+    grid-template-rows: 1fr repeat(18, 4fr) ;
+    grid-template-areas: "header header header header header ic"
+                         "vs cs cst cst cst cst"
+                         "vs cs cst cst cst cst"
+                         "vs ct ct ct ct c"
+                         "vs ct ct ct ct c"
+                         "control g g g g g"
+                         "control gt gt gt gt gt"
+                         "languages languages languages languagesImg languagesImg languagesImg"
+                         "languages languages languages languagesImg languagesImg languagesImg"
+                         "p1 p1 p1 p2 p2 p2"
+                         "p3 p3 p3 p4 p4 p4"
+                         "p5 p5 p5 p6 p6 p6"
+                         "aP aP aP aP aP aP"
+                         "xp xp xp xpT xpT xpT"
+                         "xp xp xp xpT xpT xpT"
+                         "ed1 ed1T ed1T ed2 ed2T ed2T"
+                         "ed3 ed3T ed3T ed4 ed4T ed4T"
+                         ". . . . . ."
+                         "ft ft ft ft ft ft";
+    }
     header
     {
         font-size: medium;
