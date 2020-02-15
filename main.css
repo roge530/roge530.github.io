@@ -374,6 +374,12 @@ button:hover::after
         height: 60px;
         font-size: 16px;
     }
+    button.b2
+    {
+        width: 720px;
+        height: 60px;
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 1080px)
@@ -452,6 +458,12 @@ button:hover::after
         height: 40px;
         font-size: 14px;
     }
+    button.b2
+    {
+        width: 480px;
+        height: 40px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 768px)
@@ -466,7 +478,7 @@ button:hover::after
     }
     img.map
     {
-        width: 300px;
+        width: 200px;
     }
     img.net
     {
@@ -531,6 +543,12 @@ button:hover::after
     button
     {
         width: 120px;
+        height: 20px;
+        font-size: 12px;
+    }
+    button.b2
+    {
+        width: 360px;
         height: 20px;
         font-size: 12px;
     }
